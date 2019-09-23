@@ -35,7 +35,9 @@ ln -sf ~/.dotfile/.gitconfig ~/.gitconfig
 ### autojump 安装
 - autojump 是通过记录进入过的目录到数据库来实现的, 所以必须是曾经进入过的目录才能跳转.
 macOS 安装
-`brew install autojump`
+```shell
+brew install autojump
+```
 
 ### zsh-autosuggestions 安装
 - zsh-autosuggestions自动补全插件
@@ -52,7 +54,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
 ### 上述都安装完之后的操作
-- vi ~/.zshrc 在plugins下添加autojump,zsh-suggestions等你喜欢的插件 ：wq保存退出
+- vi ~/.zshrc 在plugins下添加autojump,zsh-suggestions等你喜欢的插件(extract,z,vi-mode,git,docker,docker-compose) ：wq保存退出
 - 根目录下 mkdir .zprofile文件,添加以下内容进去
 ```shell
 . HOME/autojump/autojump.sh
