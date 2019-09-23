@@ -40,12 +40,16 @@ macOS 安装
 ### zsh-autosuggestions 安装
 - zsh-autosuggestions自动补全插件
 zsh-autosuggestions 安装
-`git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+```shell
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
 
 ### zsh-syntax-highlighting安装
 - zsh-syntax-highlighting语法高亮插件
 zsh-syntax-highlighting安装
-`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
 
 ### 上述都安装完之后的操作
 - vi ~/.zshrc 在plugins下添加autojump,zsh-suggestions等你喜欢的插件 ：wq保存退出
