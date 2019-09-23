@@ -33,36 +33,30 @@ ln -sf ~/.dotfile/.gitconfig ~/.gitconfig
 `ln -sf ~/.dotfile/.SpaceVim.d ~/` 
 
 ### autojump 安装
-```shell
-# autojump 是通过记录进入过的目录到数据库来实现的, 所以必须是曾经进入过的目录才能跳转.
-# macOS 安装
-# 推荐使用 Homebrew 安装 autojump
-brew install autojump
-```
+autojump 是通过记录进入过的目录到数据库来实现的, 所以必须是曾经进入过的目录才能跳转.
+macOS 安装
+推荐使用 Homebrew 安装 autojump
+`brew install autojump`
+
 ### zsh-autosuggestions 安装
-```shell
-# zsh-autosuggestions自动补全插件
-# zsh-autosuggestions 安装
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-```
+zsh-autosuggestions自动补全插件
+zsh-autosuggestions 安装
+`git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 
 ### zsh-syntax-highlighting安装
-```shell
-# zsh-syntax-highlighting语法高亮插件
-# zsh-syntax-highlighting安装
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
-```
+zsh-syntax-highlighting语法高亮插件
+zsh-syntax-highlighting安装
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
 
 ### 上述都安装完之后的操作
+vi ~/.zshrc 在plugins下添加autojump,zsh-suggestions等你喜欢的插件 ：wq保存退出
+根目录下 mkdir .zprofile文件,添加以下内容进去
 ```shell
-# vi ~/.zshrc 在plugins下添加autojump,zsh-suggestions等你喜欢的插件 ：wq保存退出
-# 根目录下 mkdir .zprofile文件
-# 添加以下内容进去
-# . HOME/autojump/autojump.sh
-# source HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# :wq保存退出
-# source ~/.zshrc
+. HOME/autojump/autojump.sh
+source HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+:wq 保存退出
+source ~/.zshrc
 ```
 
 
