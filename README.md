@@ -25,12 +25,22 @@ ln -sf ~/.dotfile/laily.zsh-theme ~/.oh-my-zsh/themes/
 ln -sf ~/.dotfile/.tmux.conf ~/
 ln -sf ~/.dotfile/.gitconfig ~/.gitconfig
 ```
+### 重新设置tmux 配置
+`tmux source-file ~/.tmux.conf`
 
 ### spacevim 安装
 安装  
-`curl -sLf https://spacevim.org/install.sh | bash`  
+`curl -sLf https://spacevim.org/install.sh | bash` 
+`curl -sLf https://spacevim.org/cn/install.sh | bash`
+`curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --install vim`
+`curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --install neovim`
 初始化配置  
 `ln -sf ~/.dotfile/.SpaceVim.d ~/` 
+
+SpaceVim
+curl -sLf https://spacevim.org/cn/install.sh | bash
+curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --install vim
+curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --install neovim
 
 ### autojump 安装
 - autojump 是通过记录进入过的目录到数据库来实现的, 所以必须是曾经进入过的目录才能跳转.
